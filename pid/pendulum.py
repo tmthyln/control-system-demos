@@ -9,7 +9,7 @@ env.max_torque = 5
 observation, _ = env.reset(seed=17)
 
 
-controller = PIDController(p=50, d=-0.75)
+controller = PIDController()
 
 for _ in range(2000):
     x, y, w = observation

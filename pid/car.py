@@ -12,7 +12,7 @@ env.screen_width = 1200
 observation, _ = env.reset(seed=17)
 
 
-controller = PIDController(p=4, i=0.01, d=-0.5)
+controller = PIDController()
 
 for _ in range(2000):
     position = observation[0]

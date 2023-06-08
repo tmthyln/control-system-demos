@@ -7,7 +7,7 @@ env = gym.make('InvertedPendulum-v4', render_mode='human')
 observation, _ = env.reset(seed=17)
 
 
-controller = PIDController(p=10, d=-1)
+controller = PIDController()
 
 for _ in range(2000):
     x, theta, v, w = observation
