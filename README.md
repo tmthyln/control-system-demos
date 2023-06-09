@@ -20,7 +20,7 @@
 1. Install Julia using JuliaUp
 2. Enter the Julia REPL and enter the following commands:
    ```julia
-   import Pkg; Plg.add(["Plots", "Pluto", "PlutoUI"])
+   import Pkg; Pkg.add(["Plots", "Pluto", "PlutoUI"])
    using Pluto
    Pluto.run()
    ```
